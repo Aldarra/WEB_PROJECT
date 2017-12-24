@@ -39,8 +39,8 @@ $result = $conn->query($sql);
           <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="ti-menu"></i></a>
 
           <div class="logo-wrapper">
-            <a class="logo" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
-            <a class="logo-alt" href="index.html"><img src="assets/img/logo-alt.png" alt="logo-alt"></a>
+            <a class="logo" href="index.png"><img src="assets/img/logo.png" alt="logo"></a>
+            <a class="logo-alt" href="index.png"><img src="assets/img/logo-alt.png" alt="logo-alt"></a>
           </div>
 
         </div>
@@ -101,7 +101,7 @@ $result = $conn->query($sql);
 
             <p class="lead"> <textarea rows="4" cols="70" disabled> Short Description about the user will be written here</textarea></p>
 
-            <ul class="details cols-2">
+            <ul class="details cols-4">
               <li>
                 <i class="fa fa-map-marker"></i>
                 <span><input class="small-input" type="text" id="address" value="'.$row["address"].'" readonly> , <input class="small-input" type="text" id="city" value="'.$row["city"].'" readonly>
@@ -154,9 +154,8 @@ $result = $conn->query($sql);
           </ul>
 
           <div class="action-buttons">
-            <a class="btn btn-success" data-toggle="modal" data-target="#modal-contact" href="#">Contact me</a>
             <a class="btn btn-gray" name="editBtn">Edit User</a>
-            <a class="btn btn-gray" name="saveBtn" style= "display:none;">Save User</a>
+            <a class="btn btn-gray" name="saveBtn" style="display:none;">Save User</a>
             <a class="btn btn-danger" name="deleteBtn" onclick="removeItem(this, 1)">Delete User</a>
              <span name="userID"  value="'.$userID.'" style="display:none;"> '.$userID.'</span> 
 

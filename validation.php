@@ -11,9 +11,7 @@ if (mysqli_num_rows($result)>0){
     $data = $result->fetch_assoc();
     $_SESSION['logged_user'] = array('id' => $data['id'], 'firstname' => $data['firstname'], 'lastname' => $data['lastname'], 'role' => $data['role']);
     //redirect to homepage if username and password are correct 
-    $_SESSION['firstname'] = $data['firstname'];
-    $_SESSION['lastname'] = $data['lastname'];
-    $_SESSION['userID'] = $data['id'];
+ 
 
 
     header("Location: index.php");
